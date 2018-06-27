@@ -24,6 +24,7 @@ class textcat:
 		
 		min_dist = 100000000
 		nearest_lang = ""
+		print("Distance of language from input text")
 		for lang, langFreq_obj in self.lang_freqs.items():
 			distance = self._compare_freq_profs(langFreq_obj.get_lang_prof(),lang_freq_prof.get_lang_prof())
 			print(langFreq_obj.get_lang_name() + " : " + str(distance))	
